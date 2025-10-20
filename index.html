@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Esports — The Center of E-Gaming</title>
+  <style>
+    /* ---------- GENERAL STYLES ---------- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      /* Darker background for a gaming aesthetic */
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    header {
+      /* Primary Dark Blue/Black */
+      background-color: #1f1f1f;
+      color: #00ffc8; /* Neon accent color */
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      border-bottom: 3px solid #00ffc8;
+    }
+
+    nav {
+      /* Secondary Dark Blue */
+      background-color: #2c2c2c;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffc8; /* Neon hover effect */
+      text-decoration: none;
+    }
+
+    /* ---------- HERO SECTION (Esports Arena) ---------- */
+    .hero {
+      /* Image of a gaming tournament or MLBB wallpaper */
+      background: url('https://images.unsplash.com/photo-1542751371-adc38148e29a?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero h1 {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px 40px;
+      border-radius: 10px;
+      font-size: 3rem;
+      color: #00ffc8;
+      border: 2px solid #00ffc8;
+      text-transform: uppercase;
+    }
+
+    /* ---------- FEATURED GAMES/HEROES (Renamed for clarity) ---------- */
+    .games-section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #121212;
+    }
+
+    .games-section h2 {
+      margin-bottom: 40px;
+      color: #ffffff;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .game-card {
+      /* Card style inspired by gaming UI */
+      background: #2c2c2c;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-left: 5px solid #ff4500; /* Accent color for card */
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 255, 200, 0.2); /* Neon glow on hover */
+      cursor: pointer;
+    }
+
+    .game-card img {
+      width: 100%;
+      border-radius: 8px;
+      height: 180px;
+      object-fit: cover;
+      border: 1px solid #3a3a3a;
+    }
+
+    .game-card h3 {
+      margin-top: 15px;
+      color: #00ffc8;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .game-card p {
+      color: #b0b0b0;
+    }
+
+    /* Additional section style to separate MOBA/FPS */
+    .secondary-section {
+        background-color: #1f1f1f;
+        padding: 60px 20px;
+        text-align: center;
+    }
+    
+    .secondary-section h2 {
+        color: #ff4500;
+        margin-bottom: 40px;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    /* Adjust the grid for the secondary section to fit more games */
+    .secondary-section .games-grid {
+        /* Increased max-width to allow more games to fit nicely */
+        max-width: 1400px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    }
+
+    /* ---------- NEWS SECTION (Tournament/Patch Notes) ---------- */
+    .news {
+      background-color: #121212; /* Adjusted background to alternate */
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .news h2 {
+      margin-bottom: 40px;
+      color: #ffffff; /* Primary color for news section title */
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    .news-item {
+      max-width: 900px;
+      margin: 0 auto 25px;
+      text-align: left;
+      background: #2c2c2c;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      border-right: 5px solid #00ffc8;
+    }
+
+    .news-item h3 {
+      color: #ffffff;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .news-item p {
+      color: #e0e0e0;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background-color: #1f1f1f;
+      color: #666;
+      text-align: center;
+      padding: 25px 0;
+      margin-top: 50px;
+      border-top: 3px solid #2c2c2c;
+      font-size: 0.9rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    ⚔️ NEXUS ESPORTS — The Center of E-Gaming
+  </header>
+
+  <nav>
+  
+  </nav>
+
+  <section class="hero">
+    <h1>Dominate the Digital Arena!</h1>
+  </section>
+
+  <section class="games-section">
+    <h2>Featured MOBA & Hero Titles</h2>
+    <div class="games-grid">
+      <div class="game-card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.Z5ZJ4J-2121tqltsjkhkvwHaEK?cb=12&w=1280&h=720&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mobile Legends Bang Bang">
+        <h3>Mobile Legends</h3>
+        <p>The premier 5v5 MOBA on mobile. Intense team fights and fast-paced action.</p>
+      </div>
+      <div class="game-card">
+        <img src="https://assets.vg247.com/current/2014/08/dota-2-official.jpg" alt="Dota 2 Gameplay">
+        <h3>Dota 2</h3>
+        <p>The original complex MOBA. Massive hero pool and a high skill ceiling.</p>
+      </div>
+      <div class="game-card">
+        <img src="https://cdn1.dotesports.com/wp-content/uploads/2019/09/12195522/league-of-legends.jpg" alt="League of Legends">
+        <h3>League of Legends</h3>
+        <p>The global phenomenon of PC MOBA strategy and complex team fights.</p>
+      </div>
+      <div class="game-card">
+        <img src="https://gamedaim.com/wp-content/uploads/2021/10/Kisah-Hero-Martis-Mobile-Legends-Pemilik-Gelar-Ashura-King-yang-Menaklukkan-Three-Thousand-World.jpg" alt="MLBB Hero: Fighter">
+        <h3>Martis - MLBB</h3>
+        <p>A feared Fighter in the MLBB meta, known for his relentless pursuit and control.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="secondary-section">
+    <h2>FPS, Battle Royale & Competitive Worlds</h2>
+    <div class="games-grid">
+        <div class="game-card">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.DDj0StTMRB6OM62bDSeqtwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Valorant Agents">
+            <h3>VALORANT</h3>
+            <p>Tactical 5v5 FPS. Precision gunplay combined with unique Agent abilities.</p>
+        </div>
+        <div class="game-card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.h5FwR9pP3kG8WtaVBp9meAHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Counter-Strike 2 Gameplay">
+            <h3>Counter-Strike 2</h3>
+            <p>The legendary tactical FPS, updated with modern mechanics and high fidelity.</p>
+        </div>
+        <div class="game-card">
+            <img src="https://media.sportstiger.com/media/pubg-mobile-30-sportstiger-1704793301874-original.jpg" alt="PUBG Mobile">
+            <h3>PUBG Mobile</h3>
+            <p>The ultimate Battle Royale. Strategy, survival, and intense final circles.</p>
+        </div>
+        <div class="game-card">
+            <img src="https://everipedia-storage.s3-accelerate.amazonaws.com/ProfilePics/fortnite__73392.jpeg" alt="Fortnite Competitive">
+            <h3>Fortnite</h3>
+            <p>High-stakes Battle Royale featuring fast-paced building mechanics and global tournaments.</p>
+        </div>
+        <div class="game-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg" alt="Apex Legends Gameplay">
+            <h3>Apex Legends</h3>
+            <p>Fast-paced, team-based Battle Royale with unique Legends and movement.</p>
+        </div>
+        <div class="game-card">
+            <img src="https://gaminggadgets.de/wp-content/uploads/2021/09/GTA-5-Roleplay.jpg" alt="GTA V Roleplay">
+            <h3>GTA V Roleplay</h3>
+            <p>Competitive Grand Theft Auto Roleplay events featuring high-stakes scenarios.</p>
+        </div>
+        <div class="game-card">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.VN9yBRrCTguaU_ONv-BBYAHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Roblox Arsenal Gameplay">
+            <h3>Arsenal (Roblox)</h3>
+            <p>A frenetic, skill-based gun game. A top title in the Roblox competitive FPS scene.</p>
+        </div>
+        <div class="game-card">
+            <img src="https://i.ytimg.com/vi/lw4rPzqu8iU/maxresdefault.jpg" alt="Roblox Phantom Forces Gameplay">
+            <h3>Phantom Forces</h3>
+            <p>A tactical military FPS on Roblox with complex maps and detailed weapon customization.</p>
+        </div>
+        <div class="game-card">
+            <img src="https://i.ytimg.com/vi/1QB5lY-FDNI/maxresdefault.jpg" alt="Clash Royale Gameplay">
+            <h3>Clash Royale</h3>
+            <p>Real-time mobile strategy. Fast-paced deck building and tower defense duels.</p>
+        </div>
+        <div class="game-card">
+            <img src="https://esportbet.com/wp-content/uploads/2022/08/rocket-league.jpg" alt="Rocket League Esports">
+            <h3>Rocket League</h3>
+            <p>High-octane car soccer. A perfect fusion of physics-based driving and team sports.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="news">
+    <h2>Latest Battleground Intel</h2>
+    <div class="news-item">
+      <h3>🏆 CS2 Major Finals: **FaZe Clan** Takes Down Rivals!</h3>
+      <p>A thrilling three-map series saw FaZe Clan secure their first CS2 Major trophy with a dominant performance on Ancient.</p>
+    </div>
+    <div class="news-item">
+      <h3>🔥 FNCS Grand Finals: **The Prodigy Duo** Claim Victory</h3>
+      <p>The top duo in the world conquered the Fortnite Champion Series with innovative builds and tactical late-game rotations.</p>
+    </div>
+    <div class="news-item">
+      <h3>🚗 RLCS World Championship: **Team BDS** Crowned Champions</h3>
+      <p>After an incredible run through the lower bracket, Team BDS delivers an aerial masterclass to win the Rocket League World Championship.</p>
+    </div>
+    <div class="news-item">
+      <h3>🔫 Roblox Pro League: **The Core** Wins Arsenal Season Championship</h3>
+      <p>The competitive Roblox circuit crowns The Core as the undisputed champions in the latest Arsenal FPS tournament.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Nexus Esports | Powering the Digital Game
+  </footer>
+
+</body>
+</html>
